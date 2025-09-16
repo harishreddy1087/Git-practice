@@ -11,3 +11,4 @@ FRIUTS=("APPLE" "MANGO" "KIWI")
 echo "first friut name is: ${FRIUTS[0]}"
 echo "2nd friut name is: ${FRIUTS[1]}"
 echo "3rd friut name is: ${FRIUTS[2]}"
+echo "list of all friuts are ${FRIUTS[@]}"
