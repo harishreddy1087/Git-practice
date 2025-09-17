@@ -34,17 +34,6 @@ else
      echo "git is already installed"
 fi
 
-
-# checking the git version
-git --version
-
-if  [ $? -ne 0 ]
-    then
-     echo "git is not instlled"
-else
-    echo "git version is $(git --version)"
-fi
-
 # here my requriment is to install the nginx software
 
 dnf install nginx -y
@@ -60,4 +49,22 @@ dnf install nginx -y
     else    
         echo "nginx is installed"
     fi
+fi
+# checking git & nginx softwares are installed or not
+git --version
+
+if  [ $? -ne 0 ]
+    then
+     echo "git is not instlled"
+else
+    echo "git version is $(git --version)"
+fi
+
+nginx --version
+
+if  [ $? -ne 0 ]
+    then
+     echo "git is not instlled"
+else
+    echo "git version is $(nginx --version)"
 fi
