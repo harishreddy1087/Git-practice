@@ -26,3 +26,8 @@ echo "script used: $0"
 #want to know the directory 
 
 echo "this is the current directory: $PWD"
+# final answer: this is the current directory: /home/ec2-user/Git-practice
+
+# want to know the user directory
+echo " this is the user directory: $HOME"
+
