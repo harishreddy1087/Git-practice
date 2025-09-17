@@ -60,11 +60,11 @@ else
     echo "git version is $(git --version)"
 fi
 
-nginx --version
+nginx -v
 
 if  [ $? -ne 0 ]
     then
-     echo "git is not instlled"
+     echo "nginx is not instlled"
 else
-    echo "git version is $(nginx --version)"
+    echo "nginx version is $(nginx -v)"
 fi
