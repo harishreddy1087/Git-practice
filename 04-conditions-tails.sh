@@ -49,11 +49,11 @@ fi
 
 dnf install nginx -y
 # check the nginx is installed or not
-if [$? -ne 0 ]
+if [ $? -ne 0 ]
     then
         echo "nginx is not installed try again"
 dnf install nginx -y
-    if [$? -ne 0 ]
+    if [ $? -ne 0 ]
     then 
         echo "nginx installion failed"
         exit 1
