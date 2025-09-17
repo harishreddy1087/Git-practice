@@ -23,7 +23,7 @@ if [ $? -ne 0 ]
     then
      echo "git is not installed try again"
      dnf install git -y # installing the git
-    if [$? -ne 0 ]
+    if [ $? -ne 0 ]
     then
      echo "git installation is failed"
      exit 1
@@ -44,11 +44,13 @@ if [ $? -ne 0 ]
 dnf install nginx -y
     if [ $? -ne 0 ]
     then 
-        echo "nginx installion failed"
+        echo "nginx is not installed"
         exit 1
     else    
         echo "nginx is installed"
     fi
+else
+        echo " nginx is already installed"
 fi
 # checking git & nginx softwares are installed or not
 git --version
