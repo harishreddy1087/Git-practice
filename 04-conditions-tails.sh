@@ -31,9 +31,10 @@ if [ $? -ne 0 ]
      echo "git is already installed...."
 fi
 
+# checking the git version
 git --version
 
-if [$? -ne 0 ]
+if  [ $? -ne 0 ]
     then
      echo "git is not instlled"
 else
