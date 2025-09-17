@@ -47,6 +47,8 @@ echo "current shell options: $-"
 
 # want to know the current user
 echo "im the current user: $USER"
+# answer is im the current user: ec2-user
+
 
 
 
