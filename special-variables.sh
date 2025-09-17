@@ -39,6 +39,10 @@ echo "this the PID number: $$"
 sleep 100 &
 
 echo PID of the latest excuted command: $!
+#ec2-user    1824       1  0 09:59 pts/0    00:00:00 sleep 100
+#ec2-user    1829    1311  0 09:59 pts/0    00:00:00 grep --color=auto sleep
+#this is the final answer: PID of the latest excuted command: 1824
+
 
 
 
