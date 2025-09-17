@@ -45,6 +45,9 @@ echo PID of the latest excuted command: $!
 
 echo "current shell options: $-"
 
+# want to know the current user
+echo "im the current user: $USER"
+
 
 
 
