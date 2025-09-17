@@ -15,21 +15,24 @@ if [ $USERID -ne 0 ]
     exit 1
 fi
 
-#installing the git
+#check the installing the git
 
 dnf install git -y
 # $?== duty of this command is to check the previous command is executed or not...
 if [ $? -ne 0 ]
     then
-     echo "git is not installed going to install"
+     echo "git is not installed try again"
      dnf install git -y # installing the git
     if [$? -ne 0 ]
     then
-     echo "git installation is success"
+     echo "git installation is failed"
      exit 1
     else
-     echo "git is already installed...."
-fi
+     echo "git installation successfull...."
+    fi
+else
+     echo "git is already installed"
+     
 
 # checking the git version
 git --version
