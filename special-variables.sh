@@ -5,11 +5,19 @@ echo "below practice is most use full for the interview purpose"
 #want to pass the all variables to the script
 # harish reddy 120
 #while executing we have to pass the inputs
-#all variables passed to the script: harish reddy 120 this is final output when u execute
+# final answer all variables passed to the script: harish reddy 120 this is final output when u execute
 
 echo "all variables passed to the script: $@"
 
 
 
 # want to know the how may number of variables are passed to the script during executions
+# you will see the output as 
+#all variables passed to the script: harish reddy 120 
+# final answer how many of variables are passed: 3
 echo "how many of variables are passed: $#"
+
+
+
+# want to know the script name
+echo "script used: $0"
