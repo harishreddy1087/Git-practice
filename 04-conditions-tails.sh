@@ -7,6 +7,7 @@ USERID=$(id -u)
 #echo " user id is $USERID"
 
 #checking the permission
+# -gt, -lt, -ne, -ge, -le, -eq
 
 if [$USERID -ne 0 ]
     then
@@ -17,15 +18,18 @@ fi
 #installing the git
 
 dnf install git -y
-
+# $?== duty of this command is to check the previous command is executed or not...
 if [$? -ne 0]
     then
-    echo "git is not installed going to install"
-    dnf install git -y # installing the git
+     echo "git is not installed going to install"
+     dnf install git -y # installing the git
     if [$? -ne 0 ]
     then
-    echo "git installation is success"
-    exit 1
+     echo "git installation is success"
+     exit 1
     else
-    
+     echo "git is already installed...."
+fi
+
+
 
