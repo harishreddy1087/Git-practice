@@ -30,4 +30,10 @@ echo "this is the current directory: $PWD"
 
 # want to know the user directory
 echo " this is the user directory: $HOME"
+#output this is the user directory: /home/ec2-user
+
+# want to know the process ID of the current script
+
+echo "this the PID number: $$"
+
 
