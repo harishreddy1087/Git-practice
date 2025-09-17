@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 echo "below practice is most use full for the interview purpose"
 
