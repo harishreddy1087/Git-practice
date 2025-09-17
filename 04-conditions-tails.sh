@@ -38,5 +38,6 @@ if [ $? -ne 0 ]
      echo "git is not instlled"
 else
     echo "git version is $(git --version)"
+fi
 
 
