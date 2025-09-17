@@ -55,6 +55,9 @@ echo "first argument: $1"
 echo "second argument: $2"
 # answer is first argument: 21 second argument: 22
 
+# want to know the excute status of the last command
+echo "last command status is: $?"
+
 
 
 
