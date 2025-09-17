@@ -43,6 +43,8 @@ echo PID of the latest excuted command: $!
 #ec2-user    1829    1311  0 09:59 pts/0    00:00:00 grep --color=auto sleep
 #this is the final answer: PID of the latest excuted command: 1824
 
+echo "current shell options: $-"
+
 
 
 
