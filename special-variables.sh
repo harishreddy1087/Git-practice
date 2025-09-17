@@ -21,3 +21,8 @@ echo "how many of variables are passed: $#"
 
 # want to know the script name
 echo "script used: $0"
+#output as script used: special-variables.sh
+
+#want to know the directory 
+
+echo "this is the current directory: $PWD"
