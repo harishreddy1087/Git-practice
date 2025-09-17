@@ -49,6 +49,8 @@ echo "current shell options: $-"
 echo "im the current user: $USER"
 # answer is im the current user: ec2-user
 
+echo "firest argument: $1"
+echo "second argument: $2"
 
 
 
