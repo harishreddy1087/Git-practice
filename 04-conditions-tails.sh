@@ -32,7 +32,8 @@ if [ $? -ne 0 ]
     fi
 else
      echo "git is already installed"
-     
+fi
+
 
 # checking the git version
 git --version
@@ -43,4 +44,3 @@ if  [ $? -ne 0 ]
 else
     echo "git version is $(git --version)"
 fi
-
