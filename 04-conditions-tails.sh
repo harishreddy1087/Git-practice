@@ -19,7 +19,7 @@ fi
 
 dnf install git -y
 # $?== duty of this command is to check the previous command is executed or not...
-if [$? -ne 0]
+if [$? -ne 0 ]
     then
      echo "git is not installed going to install"
      dnf install git -y # installing the git
@@ -31,5 +31,12 @@ if [$? -ne 0]
      echo "git is already installed...."
 fi
 
+git status --version
+
+if [$? -ne 0 ]
+    then
+     echo "git is not instlled"
+else
+    echo "check the installation process"
 
 
