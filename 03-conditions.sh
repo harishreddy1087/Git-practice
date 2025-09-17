@@ -4,7 +4,7 @@
 
 NUMBER=$1
 
-if [ $NUMBER -gt 25] 
+if [ $NUMBER -gt 25 ] 
 # -gt, -lt, -ne, -ge, -le, -eq
 
 then
