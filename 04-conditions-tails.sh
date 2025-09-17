@@ -23,7 +23,7 @@ if [ $? -ne 0 ]
     then
      echo "git is not installed going to install"
      dnf install git -y # installing the git
-    if [ $? -ne 0 ]
+    if [$? -ne 0 ]
     then
      echo "git installation is success"
      exit 1
@@ -33,11 +33,10 @@ fi
 
 git --version
 
-if [ $? -ne 0 ]
+if [$? -ne 0 ]
     then
      echo "git is not instlled"
 else
     echo "git version is $(git --version)"
 fi
-
 
