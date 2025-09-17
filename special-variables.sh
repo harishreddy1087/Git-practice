@@ -49,8 +49,11 @@ echo "current shell options: $-"
 echo "im the current user: $USER"
 # answer is im the current user: ec2-user
 
-echo "firest argument: $1"
+#want to pass anything during execution 
+#EX 21 22
+echo "first argument: $1"
 echo "second argument: $2"
+# answer is first argument: 21 second argument: 22
 
 
 
